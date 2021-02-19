@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        let a = 5;
+        let b = -10;
+
+        if(a >= 0 && b >= 0) {
+            let pos = (a - b);
+            alert(pos);
+        } else if(a < 0 && b < 0) {
+            let multi = a * b;
+            alert(multi); 
+        } else if((a >= 0 && b < 0) || (a < 0 && b >= 0)) {
+            let sum = a + b;
+            alert(sum);
+        }
+    </script>
+</body>
+</html>

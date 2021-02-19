@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        function summary(arg1,arg2) {
+            let sum = arg1 + arg2;
+            return sum;
+        }
+
+        function multiplication(arg1,arg2) {
+            let multi = arg1 * arg2;
+            return multi;
+        }
+
+        function subtraction(arg1,arg2) {
+            let sub = arg1 - arg2;
+            return sub;
+        }
+
+        function dividing(arg1,arg2) {
+            let divide = arg1 / arg2;
+            return divide;
+        }
+
+        let arg1 = +prompt('Введите первое число');
+        let arg2 = +prompt('Введите второе число');
+        let operation = prompt('Какое математическое действие Вы хотите совершить');
+        
+        function mathOperation(arg1, arg2, operation) {
+
+            switch(operation) {
+                case 'сложение':
+                    summary(arg1,arg2);
+                    alert(`Сумма чисел будте равна: ${summary(arg1,arg2)}`)
+                    break;
+                case 'вычитание':
+                    subtraction(arg1,arg2);
+                    alert(`Разность чисел равна: ${subtraction(arg1,arg2)}`)
+                    break;
+                case 'умножение':
+                    multiplication(arg1,arg2);
+                    alert(`Произведение чисел равно: ${multiplication(arg1,arg2)}`)
+                    break;
+                case 'деление':
+                    dividing(arg1,arg2);
+                    alert(`Частное этих чисел равно: ${dividing(arg1,arg2)}`)
+                    break;
+            }
+        }
+        
+        mathOperation(arg1,arg2,operation);
+    </script>
+</body>
+</html>

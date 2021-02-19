@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+
+        function summary(a,b) {
+            let sum = a + b;
+            return sum;
+        }
+
+        function multiplication(a,b) {
+            let multi = a * b;
+            return multi;
+        }
+
+        function subtraction(a,b) {
+            let sub = a - b;
+            return sub;
+        }
+
+        function dividing(a,b) {
+            let divide = a / b;
+            return divide;
+        }
+
+        let a = +prompt("Введите первое число");
+        let b = +prompt("Введите второе число");
+
+        summary(a,b);
+        alert(`Сумма этих чисел равна: ${summary(a,b)}`);
+
+        multiplication(a,b);
+        alert(`Произведение этих чисел равно: ${multiplication(a,b)}`);
+
+        subtraction(a,b);
+        alert(`Разница этих чисел равна: ${subtraction(a,b)}`);
+
+        dividing(a,b);
+        alert(`Частное этих чисел равно: ${dividing(a,b)}`);
+    </script>
+</body>
+</html>
